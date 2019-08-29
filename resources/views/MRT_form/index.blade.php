@@ -150,7 +150,7 @@
                 </div>
             </div>
             {{--FAX--}}
-            <div @if($errors->has('tel')) class="item" @endif>
+            <div @if($errors->has('fax')) class="item" @endif>
                 <h5 class="title">FAX<span class="color"></span></h5>
                 <p class="example">例）000-0000-0000</p>
                 <div class="text">
