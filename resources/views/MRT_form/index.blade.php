@@ -24,10 +24,11 @@
         <div>
             <h3 id="inquiry">お問い合わせ・お申込み</h3><br>
             <p>診療報酬ファクタリングに関するお問い合わせ・お申し込みはこちらから</p>
+            <p class="color" style="font-size: 15px; margin-right: 87%">*必須</p>
         </div>
         {{--個人情報の取り扱いについて--}}
         <div>
-            <h6>「個人情報の取扱いについて（<a href="https://anew-m.com/privacy">https://anew-m.com/privacy</a>）」をお読みいただき、同意の上、下記の登録手続きを行ってください。<span class="color">*必須</span></h6>
+            <h6>「個人情報の取扱いについて（<a href="https://anew-m.com/privacy">https://anew-m.com/privacy</a>）」をお読みいただき、同意の上、下記の登録手続きを行ってください。<span class="color">*</span></h6>
         </div><br>
         {{--「個人情報の取扱いについて」に同意する--}}
         <div>
