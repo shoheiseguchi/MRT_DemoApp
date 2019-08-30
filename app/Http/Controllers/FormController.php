@@ -21,6 +21,7 @@ class FormController extends Controller
         //バリデーション
         $request->validate([
                 'customer' => 'required'
+                , 'radio' => 'required'
                 , 'postcode' => ['required', 'regex:/^([0-9]{3}-[0-9]{4})$/']
                 , 'prefectures' => 'required'
                 , 'city' => 'required'
@@ -32,6 +33,7 @@ class FormController extends Controller
             , [
                 'customer.required' => 'この質問は必須です'
                 , 'postcode.required' => 'この質問は必須です'
+                , 'radio' => 'この質問は必須です'
                 , 'postcode.regex' => '000-0000の形式で入力してください'
                 , 'prefectures.required' => 'この質問は必須です'
                 , 'city.required' => 'この質問は必須です'
@@ -43,6 +45,7 @@ class FormController extends Controller
         //入力した値を取得
         $entered = new Customer();
         $entered -> customer = $request -> input('customer');
+        $entered -> radio    = $request -> input('radio');
         $entered -> postcode = $request -> input('postcode');
         $entered -> prefectures = $request -> input('prefectures');
         $entered -> city = $request -> input('city');

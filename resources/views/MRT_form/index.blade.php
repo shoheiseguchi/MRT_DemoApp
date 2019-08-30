@@ -33,8 +33,9 @@
         {{--「個人情報の取扱いについて」に同意する--}}
         <div>
             <label>
-                <input type="radio">
+                <input type="radio" class="radio" name="radio" value="同意">
                 「個人情報の取扱いについて」に同意する
+                @if($errors->has('radio')) <span class="text-danger">{{$errors->first('radio')}}</span> @endif
             </label><br><br><br>
             {{--医療法人様名または病医院様名--}}
             <div @if($errors->has('customer')) class="item" @endif>

@@ -15,6 +15,7 @@ class Customers extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table -> increments('id') -> comment('ID');
+            $table -> string('radio')->comment('ラジオボックス');
             $table -> string('customer') -> comment('医療法人様名または病医院様名');
             $table -> string('postcode') -> comment('郵便番号');
             $table -> string('prefectures') -> comment('住所（都道府県）');

@@ -145,6 +145,9 @@ Route::get('employee/list', [
 Route::get('MRT_form', 'FormController@index');
 //お問い合わせ・申し込み入力結果のページ
 Route::get('MRT_form.result', 'FormController@result');
+//TO DOアプリ（一覧）
+Route::get('/folders/{id}/tasks', 'TaskController@index')->name('tasks.index');
+
 
 
 // はばたん
